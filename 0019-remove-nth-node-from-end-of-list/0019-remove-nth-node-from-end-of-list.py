@@ -11,7 +11,6 @@ class Solution:
         while temp:
             temp=temp.next
             size+=1
-        print(size)
         if size==n:
             return head.next
         size=size-n-1
