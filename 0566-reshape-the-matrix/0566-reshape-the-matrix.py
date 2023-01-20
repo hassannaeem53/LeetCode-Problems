@@ -14,7 +14,6 @@ class Solution:
                         o_r+=1
                         o_c=0
                     result[i][j]=mat[o_r][o_c]
-                    print(result[i][j])
                     o_c+=1
             return result
         else:
