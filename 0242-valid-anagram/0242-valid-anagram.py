@@ -13,8 +13,11 @@ class Solution:
         #        return False
         #return True
         
-        #Approach 2
-        if sorted(s)==sorted(t):
-            return True
-        else:
-            return False
+        ##Approach 2
+        #if sorted(s)==sorted(t):
+        #    return True
+        #else:
+        #    return False
+        
+        #Approach 3
+        return Counter(s)==Counter(t)
