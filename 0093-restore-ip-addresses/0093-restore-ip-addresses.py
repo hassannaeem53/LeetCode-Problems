@@ -1,6 +1,5 @@
 class Solution:
     def restoreIpAddresses(self, s: str) -> List[str]:
-        a="hassan"
         if len(s)>12:
             return []
         result=[]
