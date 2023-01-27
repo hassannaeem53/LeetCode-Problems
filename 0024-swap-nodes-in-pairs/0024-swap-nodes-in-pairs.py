@@ -13,8 +13,7 @@ class Solution:
                 prev.next=cur.next
                 cur.next=cur.next.next
                 prev.next.next=cur
-                prev=cur
-                cur=cur.next
+                prev,cur=cur,cur.next
                 rec(prev,cur)
             else:
                 return
