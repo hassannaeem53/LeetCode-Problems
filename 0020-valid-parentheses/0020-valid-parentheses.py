@@ -8,9 +8,7 @@ class Solution:
                 if not stack:
                     return False
                 p=stack.pop()
-                if (p=='[' and l==']') or (p=='{' and l=='}') or (p=='(' and l==')'):
-                    pass
-                else:
+                if (p=='[' and l!=']') or (p=='{' and l!='}') or (p=='(' and l!=')'):
                     return False
         if len(stack)>0:
             return False
