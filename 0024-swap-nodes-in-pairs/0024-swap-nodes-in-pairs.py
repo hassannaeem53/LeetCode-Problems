@@ -8,16 +8,9 @@ class Solution:
         temp=ListNode(next=head)
         prev=temp
         cur=head
-        def rec(prev,cur):
-            if cur and cur.next:
-                prev.next=cur.next
-                cur.next=cur.next.next
-                prev.next.next=cur
-                prev,cur=cur,cur.next
-                rec(prev,cur)
-            else:
-                return
-        rec(prev,cur)
+        while cur and cur.next:
+            prev.next=cur.next
+            cur.next=cur.next.next
+            prev.next.next=cur
+            prev,cur=cur,cur.next
         return temp.next
-            
-            
