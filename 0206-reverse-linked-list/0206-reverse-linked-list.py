@@ -10,7 +10,6 @@ class Solution:
         while cur:
             temp=cur.next
             cur.next=prev
-            prev=cur
-            cur=temp
+            prev,cur=cur,temp
         return prev
         
