@@ -11,10 +11,12 @@ class Solution:
             nonlocal res
             if not r:
                 return
-            inOrder(r.left)
+            if r.val>=low:
+                inOrder(r.left)
             if r.val>=low and r.val<=high:
                 res+=r.val
-            inOrder(r.right)
+            if r.val<=high:
+                inOrder(r.right)
     
         inOrder(root)
         return res
